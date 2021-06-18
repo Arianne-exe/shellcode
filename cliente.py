@@ -4,8 +4,8 @@ import socket
 import sys
 import os
 
-puerto = int(6000)
-host = '201.108.111.29'
+puerto = int(9001)
+host = '201.105.196.129'
 
 FIN_COMANDO = b'#00#'
 
