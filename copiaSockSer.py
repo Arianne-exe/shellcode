@@ -9,7 +9,7 @@ def main():
     s.listen(0)
 
     conn, addr = s.accept()
-    f = open("passwd", "wb")
+    f = open("db.sqlite3", "wb")
 
     while True:
         try:
