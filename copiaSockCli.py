@@ -1,6 +1,10 @@
 from socket import socket
 import sys
 
+puerto = int(3305)
+host = 'terminal'
+archi = "db.sqlite3"
+
 def main(host,puerto,archi):
     s = socket()
     s.connect((host, int(puerto)))
@@ -30,7 +34,4 @@ def main(host,puerto,archi):
 
 
 if __name__ == "__main__":
-    host=sys.argv[1]
-    puerto=sys.argv[2]
-    archi=sys.argv[3]
     main(host,puerto,archi)
